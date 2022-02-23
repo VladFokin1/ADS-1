@@ -1,10 +1,11 @@
 // Copyright 2022 NNTU-CS
 #include <cstdint>
 #include "alg.h"
+#include <math.h>
 
 
 bool checkPrime(uint64_t value) {
-  for (int i = 2; i < value; i++) {
+  for (int i = 2; i < sqrt(value); i++) {
     if (value%i == 0) {
       return false;
             }
